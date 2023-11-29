@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useScript(src) { 
+export default function useScript(src) {
     const [lib, setLib] = useState({});
     useEffect(() => {
         const script = document.createElement("script");

@@ -6,7 +6,7 @@ function App() {
     if (window.OmiseCard) {
         OmiseCard = window.OmiseCard;
         OmiseCard.configure({
-            publicKey: "pkey_test_5n1kq8v8h8r2q5v3j7u",
+            publicKey: import.meta.env.OMISE_PKEY,
             currency: "thb",
             frameLabel: "Merchant name",
             submitLabel: "PAY NOW",
